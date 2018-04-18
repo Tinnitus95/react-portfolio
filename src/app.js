@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
-import 'normalize.css/normalize.css'
+import Main from './components/main';
+
+import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 
+class App extends Component{
+    render(){
+        return (
+                <BrowserRouter>
+                    <Main/>
+                </BrowserRouter>
+        );
+    }
+}
 
-ReactDOM.render(<p>This is my boilerplate</p>, document.getElementById('app'))
+
+
+ReactDOM.render(<App/>, document.getElementById('app'))

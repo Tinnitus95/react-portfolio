@@ -1,0 +1,32 @@
+.sidebar{
+    width: 23%;
+    min-width: 23%;
+    height: 100vh;
+    border-right: 1px solid $main-gray;
+}
+
+.sidebarContainer{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.header{
+    box-sizing: inherit;
+}
+
+
+@media (max-width: 900px){
+    .sidebar {
+        width: 100%;
+        height: auto;
+
+    }
+    .sidebarContainer{
+        justify-content: center;
+        text-align: center;
+        position: inherit;
+        height: auto;
+    }
+}
