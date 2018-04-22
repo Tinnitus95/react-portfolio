@@ -3,7 +3,7 @@ import React from 'react';
 
 const ContentHeader = () => {
     return (
-        <div>
+        <div >
             <img src="./images/small-logo.png"/>
             <hr/>
         </div>

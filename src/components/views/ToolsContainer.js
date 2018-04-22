@@ -1,19 +1,24 @@
 import React, {Component} from 'react';
-
+import _ from 'lodash';
+import ToolsListItem from '../ToolsListItem'
 class ToolsContainer extends Component {
+    toolDisplay(){
+        return _.map(this.props.tools, tool => {
+            return <ToolsListItem
+                    key={tool.name}
+                    tool={tool}
+            />;
+        });
+    }
+
     render(){
+        console.log(this.props.tools)
         return (
             <div>
                 <h2>TOOLS</h2>
-                <p>Mauris sem velit, vehicula eget sodales vitae,
-                    rhoncus eget sapien:</p>
-                    <ol>
-                        <li>Nulla pulvinar diam</li>
-                        <li>Facilisis bibendum</li>
-                        <li>Vestibulum vulputate</li>
-                        <li>Eget erat</li>
-                        <li>Id porttitor</li>
-                    </ol>
+                <ul>
+                    {this.toolDisplay()}
+                </ul>
                 </div>
             );
         }

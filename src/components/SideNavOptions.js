@@ -14,8 +14,12 @@ class SideNavOptions extends Component {
                     <Link to="/tools">Tools</Link>
                 </li>
                 <li>
+                    <Link to="/certificates">Certificates</Link>
+                </li>
+                <li>
                     <Link to="/contact">Contact</Link>
                 </li>
+
                 <li>
                     <Link to="/guestlist">Guestlist</Link>
                 </li>
