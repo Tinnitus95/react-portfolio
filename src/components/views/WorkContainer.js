@@ -15,7 +15,7 @@ class WorkContainer extends Component {
 
 
     render(){
-        console.log(this.props.work)
+        
         return(
             <div>
                 <h2>WORK</h2>

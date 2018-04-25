@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SideNavHeader from './SideNavHeader';
-import SocialButtons from './SocialButtons';
+
+import SideNavFooter from './SideNavFooter';
 import SideNavOptions from './SideNavOptions';
 class SideNav extends Component{
     render(){
@@ -9,7 +10,7 @@ class SideNav extends Component{
                 <div className="sidebarContainer">
                     <SideNavHeader/>
                     <SideNavOptions/>
-                    <SocialButtons/>
+                    <SideNavFooter/>
                 </div>
             </nav>
         );

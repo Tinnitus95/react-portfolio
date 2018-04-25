@@ -58,6 +58,7 @@ class PageContent extends Component{
     render(){
         return (
             <div className="content-wrapper">
+
                 <ContentHeader/>
 
                     <div className="margin">
@@ -68,7 +69,7 @@ class PageContent extends Component{
                             )} />
                             <Route path="/Certificates" render={(props) => (<CertificatesContainer {...props} cert={this.state.cert} />
                             )} />
-                            <Route path="/contact" component={ContactContainer}/>
+                            {/* <Route path="/contact" component={ContactContainer}/> */}
                             <Route path="/guestlist" component={GuestListContainer}/>
                         </Switch>
                     </div>
