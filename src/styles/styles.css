@@ -1,5 +1,6 @@
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   height: 100%;
@@ -33,15 +34,18 @@ button:disabled {
   .flex-container {
     flex-direction: column; }
   .content-wrapper {
-    width: 100%; } }
+    width: 100%; }
+  .margin {
+    margin: 0; } }
 
 .sidebar {
   width: 23%;
   min-width: 23%;
   height: 100vh;
-  padding-left: 20px; }
+  padding: 0 20px; }
 
 .sidebarContainer {
+  width: inherit;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -49,17 +53,21 @@ button:disabled {
   height: 100vh; }
 
 .header {
+  margin-top: 20px;
   box-sizing: inherit; }
 
 @media (max-width: 900px) {
   .sidebar {
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding: 0; }
   .sidebarContainer {
     justify-content: center;
     text-align: center;
     position: inherit;
-    height: auto; } }
+    height: auto; }
+  .footer h3, .footer p {
+    display: none; } }
 
 .socialContainer {
   display: flex;
@@ -87,6 +95,10 @@ button:disabled {
   .socialContainer .fac:hover {
     color: #3b5998; }
 
+@media (max-width: 900px) {
+  .socialContainer {
+    justify-content: center; } }
+
 .workItem {
   display: flex;
   align-items: center;
@@ -102,6 +114,8 @@ button:disabled {
     padding-left: 55px;
     display: flex;
     flex-direction: column; }
+    .workItem div a {
+      width: fit-content; }
     .workItem div h3 {
       margin: 0;
       padding: 0;
@@ -109,9 +123,31 @@ button:disabled {
 
 .certItem .certCard {
   text-align: center;
-  margin: 0 10px; }
+  margin: 0 10px;
+  transition: all .2s ease-in-out; }
   .certItem .certCard img {
     width: 100%; }
+
+.toolBox {
+  display: flex;
+  flex-wrap: wrap; }
+
+.toolItem {
+  padding: 20px;
+  text-align: center; }
+  .toolItem img {
+    width: 150px;
+    height: 150px; }
+  .toolItem div {
+    padding-left: 55px; }
+
+@media (max-width: 900px) {
+  .box-view {
+    flex-direction: column; }
+  .row {
+    padding: 0; }
+  .toolBox {
+    padding: 0; } }
 
 .pageNav {
   margin: 0;
@@ -132,11 +168,31 @@ button:disabled {
     .pageNav li:hover .nav-links {
       color: white; }
 
+@media (max-width: 900px) {
+  .pageNav {
+    display: flex;
+    justify-content: center; } }
+
 .views-wrapper {
   padding-left: 5%; }
   .views-wrapper h1 {
     text-decoration: underline;
     font-size: 4.8rem; }
 
+@media (max-width: 900px) {
+  .views-wrapper {
+    padding: 0; }
+    .views-wrapper h1 {
+      padding-left: 5%; } }
+
 .box-view {
   display: flex; }
+
+.contentHeader {
+  position: fixed;
+  width: 100%; }
+
+@media (max-width: 900px) {
+  .contentHeader {
+    top: 0;
+    right: 0; } }
