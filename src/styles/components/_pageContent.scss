@@ -1,0 +1,17 @@
+.views-wrapper{
+    padding-left: 5%;
+
+    h1{
+        text-decoration: underline;
+        font-size: $xl-size
+    }
+}
+
+@media (max-width: 900px){
+    .views-wrapper{
+        padding: 0;
+        h1{
+            padding-left: 5%;
+        }
+    }
+}

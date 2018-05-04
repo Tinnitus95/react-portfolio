@@ -6,8 +6,8 @@ class CertificatesContainer extends Component {
     certDisplay(){
         return _.map(this.props.cert, certificate => {
             return <CertificatesItem
-                    key={certificate.name}
-                    certificate={certificate}
+                key={certificate.name}
+                certificate={certificate}
             />;
         });
     }
@@ -16,13 +16,16 @@ class CertificatesContainer extends Component {
         console.log(this.props.cert)
         return (
             <div>
-                <h2>Certificates</h2>
-                <ul>
-                    {this.certDisplay()}
-                </ul>
-                </div>
-            );
-        }
+                <h1>Certificates</h1>
+
+
+                    <ul className="box-view row">
+                        {this.certDisplay()}
+                    </ul>
+
+            </div>
+        );
     }
+}
 
 export default CertificatesContainer;

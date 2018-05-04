@@ -2,31 +2,42 @@
     width: 23%;
     min-width: 23%;
     height: 100vh;
-    border-right: 1px solid $main-gray;
+    padding: 0 20px;
+
 }
 
 .sidebarContainer{
+    width: inherit;
     display: flex;
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+
 }
 .header{
+    margin-top: 20px;
     box-sizing: inherit;
 }
+
+
 
 
 @media (max-width: 900px){
     .sidebar {
         width: 100%;
         height: auto;
-
+        padding: 0;
     }
     .sidebarContainer{
         justify-content: center;
         text-align: center;
         position: inherit;
         height: auto;
+    }
+    .footer{
+        h3, p{
+            display: none;
+        }
     }
 }

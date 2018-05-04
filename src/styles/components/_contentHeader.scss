@@ -1,0 +1,11 @@
+.contentHeader{
+    position: fixed;
+    width: 100%;
+}
+
+@media (max-width: 900px){
+    .contentHeader{
+        top: 0;
+        right: 0;
+    }
+}

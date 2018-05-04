@@ -15,8 +15,8 @@ class ToolsContainer extends Component {
         console.log(this.props.tools)
         return (
             <div>
-                <h2>TOOLS</h2>
-                <ul>
+                <h1>TOOLS</h1>
+                <ul className="toolBox">
                     {this.toolDisplay()}
                 </ul>
                 </div>

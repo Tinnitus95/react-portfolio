@@ -1,5 +1,6 @@
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -8,6 +9,9 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
 
+}
+li{
+    list-style: none
 }
 
 button {
@@ -26,6 +30,7 @@ button:disabled{
 
 .content-wrapper{
     width: 77%;
+    border-left: 1px solid $main-gray;
 
 }
 .fixed{
@@ -40,5 +45,11 @@ button:disabled{
 @media (max-width: 900px){
     .flex-container{
         flex-direction: column;
+    }
+    .content-wrapper{
+        width: 100%;
+    }
+    .margin{
+        margin: 0;
     }
 }

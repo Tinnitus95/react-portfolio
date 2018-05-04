@@ -5,7 +5,7 @@ class GuestListContainer extends Component {
     render(){
         return (
             <div>
-                <h2>Guestlist</h2>
+                <h1>Guestlist</h1>
 
                     <CommentsForm/>
                     <CommentsShow/>

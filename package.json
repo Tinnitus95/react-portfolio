@@ -5,8 +5,10 @@
   "author": "Oscar Fredriksson",
   "license": "MIT",
   "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build-js": "react-scripts build",
     "serve": "live-server public/",
-    "build": "webpack",
+    "build": "npm-run-all build-css build-js",
     "start": "webpack-dev-server"
   },
   "dependencies": {
@@ -21,7 +23,9 @@
     "live-server": "^1.2.0",
     "lodash": "^4.17.5",
     "node-sass": "4.5.3",
+    "node-sass-chokidar": "^1.2.2",
     "normalize.css": "7.0.0",
+    "npm-run-all": "^4.1.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-fontawesome": "^1.6.1",

@@ -4,26 +4,20 @@ import FontAwesome from 'react-fontawesome';
 
 const SocialButtons = () => {
     return (
-        <div className="flex-container">
-            <a className='social-icon' target="_blank" href="https://github.com/Tinnitus95">
+        <div className=" socialContainer">
+            <a className='social-icon git' target="_blank" href="https://github.com/Tinnitus95">
                 <FontAwesome
-
                     name='github'
-
                 />
             </a>
-            <a className='social-icon' target="_black" href='https://www.linkedin.com/in/oscar-fredriksson1995'>
+            <a className='social-icon li' target="_black" href='https://www.linkedin.com/in/oscar-fredriksson1995'>
                 <FontAwesome
-
                     name='linkedin'
-
                 />
             </a>
-            <a className='social-icon'>
+            <a className='social-icon fac'>
                 <FontAwesome
-
                     name='facebook'
-
                 />
             </a>
 

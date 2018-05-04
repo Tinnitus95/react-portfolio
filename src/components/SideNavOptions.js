@@ -1,27 +1,27 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 
 class SideNavOptions extends Component {
     render(){
         return (
 
-            <ul>
+            <ul className="pageNav">
                 <li>
-                    <Link to="/">Work</Link>
+                    <NavLink className="nav-links" activeClassName="active-nav"  to="/">Work</NavLink>
                 </li>
                 <li>
-                    <Link to="/tools">Tools</Link>
+                    <NavLink className="nav-links" activeClassName="active-nav" to="/tools">Tools</NavLink>
                 </li>
                 <li>
-                    <Link to="/certificates">Certificates</Link>
+                    <NavLink className="nav-links" activeClassName="active-nav" to="/certificates">Certificates</NavLink>
                 </li>
                 {/* <li>
                     <Link to="/contact">Contact</Link>
                 </li> */}
 
                 <li>
-                    <Link to="/guestlist">Guestlist</Link>
+                    <NavLink className="nav-links" activeClassName="active-nav" to="/guestlist">Guestlist</NavLink>
                 </li>
 
                 {/* <Link >Work</Link>

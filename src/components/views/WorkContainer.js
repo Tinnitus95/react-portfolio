@@ -15,10 +15,10 @@ class WorkContainer extends Component {
 
 
     render(){
-        
+
         return(
-            <div>
-                <h2>WORK</h2>
+            <div >
+                <h1>WORK</h1>
                 <ul>
                     {this.workDisplay()}
                 </ul>

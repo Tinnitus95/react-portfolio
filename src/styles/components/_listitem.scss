@@ -1,0 +1,82 @@
+.workItem{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+
+
+        span{
+            width: 30%;
+            img{
+                width: 100%;
+                max-height: 230px;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+            }
+        }
+
+
+        div{
+            width: 70%;
+            padding-left:  55px;
+            display: flex;
+            flex-direction: column;
+
+            a{
+                width: fit-content;
+            }
+
+            h3{
+                margin: 0;
+                padding: 0;
+                font-size: 2.5rem;
+            }
+
+
+        }
+}
+
+
+.certItem{
+
+    .certCard{
+        text-align: center;
+        margin: 0 10px;
+        transition: all .2s ease-in-out;
+        img{
+            width: 100%;
+        }
+
+    }
+    // .certCard:hover{
+    //     transform: scale(1.5);
+    // }
+}
+.toolBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.toolItem{
+
+
+    padding: 20px;
+    text-align: center;
+    img{
+        width: 150px;
+        height: 150px;
+
+    }
+    div{
+        padding-left: 55px;
+    }
+}
+@media (max-width: 900px){
+    .box-view{
+        flex-direction: column;
+    }
+    .row{
+        padding: 0;
+    }
+    .toolBox{
+        padding: 0;
+    }
+}

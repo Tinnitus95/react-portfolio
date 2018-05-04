@@ -12,11 +12,11 @@ class CommentsForm extends Component{
 
     handleTextChange(text){
         this.setState({text})
-        console.log(text);
+
     }
     handleAuthorChange(author){
         this.setState({author})
-        console.log(author);
+        
     }
     handleSubmit(event) {
         event.preventDefault();

@@ -3,10 +3,11 @@ import React from 'react';
 
 const CertificatesItem = ({certificate}) => {
     return (
-        <li>
-            <img src={certificate.img}></img>
-            <h3>{certificate.name}</h3>
-
+        <li className="certItem col-sm-4 col-lg-4">
+            <div className="certCard">
+                <img src={certificate.img}></img>
+                <h3>{certificate.name}</h3>
+            </div>
         </li>
     );
 }
