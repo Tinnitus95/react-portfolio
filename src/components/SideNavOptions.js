@@ -20,9 +20,9 @@ class SideNavOptions extends Component {
                     <Link to="/contact">Contact</Link>
                 </li> */}
 
-                <li>
+                {/* <li>
                     <NavLink className="nav-links" activeClassName="active-nav" to="/guestlist">Guestlist</NavLink>
-                </li>
+                </li> */}
 
                 {/* <Link >Work</Link>
                 <Link >Tools</Link>

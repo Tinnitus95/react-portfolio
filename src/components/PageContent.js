@@ -47,7 +47,7 @@ class PageContent extends Component{
                     link: 'http://off-colorgame.surge.sh/',
                     github: 'https://github.com/Tinnitus95/color_game'
                 },
-                
+
                 {
                     name: 'Snake LMS',
                     img: './images/snake.png',
@@ -127,7 +127,7 @@ class PageContent extends Component{
                             <Route path="/Certificates" render={(props) => (<CertificatesContainer {...props} cert={this.state.cert} />
                             )} />
                             {/*<Route path="/contact" component={ContactContainer}/> */}
-                            <Route path="/guestlist" component={GuestListContainer}/>
+                            {/* <Route path="/guestlist" component={GuestListContainer}/> */}
                         </Switch>
                     </div>
                 </div>
