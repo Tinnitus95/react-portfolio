@@ -88,7 +88,7 @@ class PageContent extends Component{
                 },
                 {
                     name: "MongoDB",
-                    img: './images/badges/MongoDB.svg'
+                    img: './images/badges/mongoDB.svg'
                 },
 
             ],

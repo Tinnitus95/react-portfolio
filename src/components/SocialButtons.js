@@ -15,7 +15,7 @@ const SocialButtons = () => {
                     name='linkedin'
                 />
             </a>
-            <a className='social-icon fac'>
+            <a className='social-icon fac' target="_black" href='https://www.facebook.com/oscar.fredriksson.79'>
                 <FontAwesome
                     name='facebook'
                 />
