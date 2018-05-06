@@ -15,6 +15,7 @@ class PageContent extends Component{
                 {
                     name: 'Bi-dashboard',
                     img: './images/dashboard.png',
+                    alt: 'BI-dashboard',
                     text: 'Dashboard made as a schoolproject for HeadAgent',
                     link: 'https://irdashboard.surge.sh/',
                     github: 'https://github.com/Tinnitus95/IRecommend-BI-Dashboard'
@@ -22,6 +23,7 @@ class PageContent extends Component{
                 {
                     name: 'Nest:R',
                     img: './images/nestr.png',
+                    alt: 'geolocation game',
                     text: 'Mobile geolocation game where you fight over the control of nests in your hometown',
                     link: 'https://nestr.surge.sh/',
                     github: 'https://github.com/Tinnitus95/Game_Kiwi'
@@ -29,6 +31,7 @@ class PageContent extends Component{
                 {
                     name: 'React Weather forecast',
                     img: './images/weatherapp.png',
+                    alt: 'weatherapp',
                     text: 'App built on the openweathermap API',
                     link: '',
                     github: 'https://github.com/Tinnitus95/react_weather_app'
@@ -36,6 +39,7 @@ class PageContent extends Component{
                 {
                     name: 'Indecision',
                     img: './images/indecision.png',
+                    alt: 'online planner',
                     text: 'Minimalistic todolist in React',
                     link: 'http://off-indecision.surge.sh/',
                     github: 'https://github.com/Tinnitus95/react_todo_list'
@@ -43,6 +47,7 @@ class PageContent extends Component{
                 {
                     name: 'Color Game',
                     img: './images/color_game.png',
+                    alt: 'RGB-game',
                     text: 'Small game to learn RGB codes',
                     link: 'http://off-colorgame.surge.sh/',
                     github: 'https://github.com/Tinnitus95/color_game'
@@ -51,6 +56,7 @@ class PageContent extends Component{
                 {
                     name: 'Snake LMS',
                     img: './images/snake.png',
+                    alt: 'education platform',
                     text: 'The first project I made! Mostly here to show my journey',
                     link: '',
                     github: 'https://github.com/Tinnitus95/Team-Snake'
@@ -60,50 +66,61 @@ class PageContent extends Component{
             tools:[
                 {
                     name: "HTML-5",
-                    img: './images/badges/html.svg'
+                    img: './images/badges/html.svg',
+                    alt: 'html'
                 },
                 {
                     name: "CSS",
-                    img: './images/badges/css.svg'
+                    img: './images/badges/css.svg',
+                    alt: 'css'
                 },
                 {
                     name: "JavaScript",
-                    img: './images/badges/js.svg'
+                    img: './images/badges/js.svg',
+                    alt: 'js'
                 },
                 {
                     name: "Sass",
-                    img: './images/badges/sass.svg'
+                    img: './images/badges/sass.svg',
+                    alt: 'sass'
                 },
                 {
                     name: "React",
-                    img: './images/badges/react.svg'
+                    img: './images/badges/react.svg',
+                    alt: 'react'
                 },
                 {
                     name: "Redux",
-                    img: './images/badges/redux.svg'
+                    img: './images/badges/redux.svg',
+                    alt: 'redux'
                 },
                 {
                     name: "Node",
-                    img: './images/badges/node.svg'
+                    img: './images/badges/node.svg',
+                    alt: 'node'
                 },
                 {
                     name: "MongoDB",
-                    img: './images/badges/mongoDB.svg'
+                    img: './images/badges/mongoDB.svg',
+                    alt: 'mongo'
                 },
 
             ],
             cert: [
                 {
                     name: 'Udacity',
-                    img: './images/certificates/googleScholarship.png'
+                    img: './images/certificates/googleScholarship.png',
+                    alt: 'Udacity scholarship'
                 },
                 {
                     name: 'Udemy Bootcamp',
-                    img: '/images/certificates/bootcampcert.png'
+                    img: '/images/certificates/bootcampcert.png',
+                    alt: 'Udemy bootcamp'
                 },
                 {
                     name: 'Udemy React',
-                    img: '/images/certificates/reactcert.jpg'
+                    img: '/images/certificates/reactcert.jpg',
+                    alt: 'Udemy react'
                 }
             ]
         }
@@ -116,7 +133,7 @@ class PageContent extends Component{
 
                 <div className="margin">
                     <hr/>
-                    <div className="views-wrapper">
+                    <main className="views-wrapper">
 
 
                         <Switch>
@@ -129,7 +146,7 @@ class PageContent extends Component{
                             {/*<Route path="/contact" component={ContactContainer}/> */}
                             {/* <Route path="/guestlist" component={GuestListContainer}/> */}
                         </Switch>
-                    </div>
+                    </main>
                 </div>
 
             </div>

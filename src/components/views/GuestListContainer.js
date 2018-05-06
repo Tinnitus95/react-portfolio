@@ -4,12 +4,12 @@ import CommentsShow from '../CommentsShow';
 class GuestListContainer extends Component {
     render(){
         return (
-            <div>
+            <section>
                 <h1>Guestlist</h1>
 
                     <CommentsForm/>
                     <CommentsShow/>
-                </div>
+                </section>
             );
         }
     }

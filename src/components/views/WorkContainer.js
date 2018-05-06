@@ -17,12 +17,12 @@ class WorkContainer extends Component {
     render(){
 
         return(
-            <div >
+            <section>
                 <h1>WORK</h1>
                 <ul>
                     {this.workDisplay()}
                 </ul>
-            </div>
+            </section>
             );
         }
     }

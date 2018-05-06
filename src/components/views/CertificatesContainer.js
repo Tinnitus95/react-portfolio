@@ -15,7 +15,7 @@ class CertificatesContainer extends Component {
     render(){
         console.log(this.props.cert)
         return (
-            <div>
+            <section>
                 <h1>Certificates</h1>
 
 
@@ -23,7 +23,7 @@ class CertificatesContainer extends Component {
                         {this.certDisplay()}
                     </ul>
 
-            </div>
+            </section>
         );
     }
 }

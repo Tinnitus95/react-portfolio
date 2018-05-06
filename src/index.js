@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Main from './components/main';
 
 import 'normalize.css/normalize.css';
-import './styles/styles.css';
+import './styles/styles.scss';
 
 
 class App extends Component{

@@ -14,12 +14,12 @@ class ToolsContainer extends Component {
     render(){
         console.log(this.props.tools)
         return (
-            <div>
+            <section>
                 <h1>TOOLS</h1>
                 <ul className="toolBox">
                     {this.toolDisplay()}
                 </ul>
-                </div>
+            </section>
             );
         }
     }
